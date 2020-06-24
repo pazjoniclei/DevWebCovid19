@@ -1,0 +1,22 @@
+{
+  "name": "exercicio_faesa",
+  "version": "1.0.0",
+  "description": "exercicio",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "Joniclei Silva da Paz",
+  "license": "ISC"
+}

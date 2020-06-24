@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Listar Paciente</h2>          
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Cpf</th>
+        <th>Telefone</th>
+        <th>Endereço</th>
+        <th>Data de internação</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        {{#each results}}
+        <form action="/deletar-paciente/{{id}}" method="GET">
+            <tr>
+                <td>{{id}}</td>
+                <td>{{nome}}</td>
+                <td>{{email}}</td>
+                <td>{{cpf}}</td>
+                <td>{{telefone}}</td>
+                <td>{{endereco}}</td>
+                <td>{{#formatDate data_internacao}}{{/formatDate}}</td>
+                <td>
+                    <button type="submit" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-trash"></span> Excluir
+                    </button>
+                </td>
+            </tr>
+        </form>
+        {{/each}}
+    </tbody>
+  </table>
+</div>

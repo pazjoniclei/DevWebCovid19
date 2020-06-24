@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Buscar Paciente</h2>
+    <form action="/listar-paciente" method="GET">
+        <div class="form-group">
+            <select name="paciente_id" id="paciente_id">
+                <option value="">Selecionar</option>
+                {{#each results}}
+                    <option value="{{id}}">{{nome}}</option>
+                {{/each}}
+            </select><br><br>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar paciente</button>
+    </form>
+</div>
